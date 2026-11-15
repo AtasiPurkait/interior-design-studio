@@ -1,0 +1,312 @@
+/* ==========================================================================
+   A.P. INTERIOR & HOME DECORATION - DEDICATED QUOTE SYSTEM
+   "Get a Free Design Quote & Consultation"
+   ========================================================================== */
+
+/* Inherits tokens from style.css */
+
+.quote-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.quote-main-container {
+  flex: 1;
+  padding: 3rem 0 5rem 0;
+}
+
+.quote-wizard-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.quote-wizard-header {
+  background: linear-gradient(135deg, #1C1E24, #121316);
+  color: #FFFFFF;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.quote-wizard-header h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
+.quote-wizard-header p {
+  color: #BDB7AF;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Stepper Bar */
+.wizard-steps-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.wizard-steps-indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.wizard-step-node {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.step-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #252830;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.wizard-step-node.active .step-circle {
+  background-color: var(--accent-gold);
+  border-color: #FFFFFF;
+  color: #121316;
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.5);
+}
+
+.wizard-step-node.completed .step-circle {
+  background-color: #25D366;
+  border-color: #25D366;
+  color: #FFFFFF;
+}
+
+.step-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #A39D94;
+  font-weight: 600;
+}
+
+.wizard-step-node.active .step-label {
+  color: var(--accent-gold);
+}
+
+/* Wizard Form Body */
+.wizard-form-body {
+  padding: 2.8rem 2.5rem;
+}
+
+.wizard-section-pane {
+  display: none;
+}
+
+.wizard-section-pane.active {
+  display: block;
+  animation: fadeInStep 0.4s ease;
+}
+
+@keyframes fadeInStep {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pane-heading {
+  font-size: 1.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.pane-subtitle {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Floor Plan & Property Grid */
+.property-types-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.property-card-select {
+  position: relative;
+}
+
+.property-card-select input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.property-card-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.85rem 1rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.property-card-label i {
+  font-size: 1.85rem;
+  color: var(--accent-gold);
+  margin-bottom: 0.85rem;
+}
+
+.property-card-label h4 {
+  font-size: 1.05rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.property-card-label span {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.property-card-select input:checked + .property-card-label {
+  border-color: var(--accent-gold);
+  background-color: var(--accent-gold-light);
+  box-shadow: 0 0 0 2px var(--accent-gold);
+  transform: translateY(-3px);
+}
+
+/* Scope Selection Grid */
+.scopes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.scope-checkbox-card {
+  position: relative;
+}
+
+.scope-checkbox-card input {
+  position: absolute;
+  opacity: 0;
+}
+
+.scope-card-label {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.15rem 1rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.scope-card-label i {
+  font-size: 1.25rem;
+  color: var(--accent-gold);
+}
+
+.scope-card-label span {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.scope-checkbox-card input:checked + .scope-card-label {
+  border-color: var(--accent-gold);
+  background-color: var(--accent-gold-light);
+  box-shadow: 0 0 0 2px var(--accent-gold);
+}
+
+/* Wizard Button Navigation */
+.wizard-footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-top: 1.85rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Live Estimate Sticky Badge */
+.live-estimate-badge-box {
+  background: var(--bg-secondary);
+  border: 1px dashed var(--accent-gold);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.estimate-caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.estimate-number {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+}
+
+@media (max-width: 767px) {
+  .wizard-form-body {
+    padding: 2rem 1.25rem;
+  }
+  
+  .quote-wizard-header {
+    padding: 1.85rem 1.25rem;
+  }
+  
+  .property-types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .scopes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .step-label {
+    display: none;
+  }
+}

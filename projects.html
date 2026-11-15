@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interior Architecture Portfolio | A.P. Interior Kolkata</title>
+  <meta name="description" content="Browse our luxury interior design portfolio featuring penthouses, heritage villas, and commercial offices executed across Kolkata." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo-link" aria-label="A.P. Interior Homepage">
+        <img src="IMAGE/LOGO1.png" alt="A.P. Interior Monogram" class="brand-logo-img" />
+        <div class="brand-text-block">
+          <span class="brand-title">A.P. INTERIOR</span>
+          <span class="brand-subtitle">Design Atelier &bull; Kolkata</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link active">Portfolio</a>
+        <a href="index.html#estimator" class="nav-link">Cost Estimator</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle theme mode" title="Switch Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="quote.html" class="btn btn-primary btn-sm d-none-mobile">
+          <span>Get Free Quote</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="brand-text-block">
+        <span class="brand-title">A.P. INTERIOR</span>
+        <span class="brand-subtitle">Luxury Living &bull; Kolkata</span>
+      </div>
+      <button class="drawer-close-btn" aria-label="Close Mobile Menu"><i class="fas fa-times"></i></button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link"><span>Home</span><i class="fas fa-chevron-right"></i></a>
+      <a href="about.html" class="mobile-nav-link"><span>About Studio</span><i class="fas fa-chevron-right"></i></a>
+      <a href="services.html" class="mobile-nav-link"><span>Interior Services</span><i class="fas fa-chevron-right"></i></a>
+      <a href="projects.html" class="mobile-nav-link active"><span>Design Portfolio</span><i class="fas fa-chevron-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link"><span>Contact Atelier</span><i class="fas fa-chevron-right"></i></a>
+    </nav>
+  </aside>
+
+  <!-- PAGE HERO & BREADCRUMBS -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.65rem;"></i>
+        <span class="current">Design Portfolio</span>
+      </div>
+      <h1>Curated Architectural Portfolio</h1>
+      <p style="color: #D3CECE; max-width: 650px; margin: 0 auto;">
+        Step inside Kolkata's most celebrated bespoke residences and commercial landmarks crafted by A.P. Interior &amp; Home Decoration.
+      </p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION WITH FILTERING & MODAL -->
+  <main class="section-padding portfolio-section">
+    <div class="container">
+
+      <!-- Category Filter Bar -->
+      <div class="portfolio-filter-bar" role="tablist">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="living">Living &amp; Dining</button>
+        <button class="filter-btn" data-filter="kitchen">Modular Kitchen</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom Suites</button>
+        <button class="filter-btn" data-filter="bath">Luxury Bath &amp; Spa</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="living" data-title="The Alipore Penthouse" data-category-label="Living & Dining" data-area="3,400 Sq. Ft." data-style="Contemporary Elegance" data-client="Private Residence, Alipore" data-desc="Complete living lounge with double-height crystal chandelier, custom curved velvet sofa, bookmatched Italian Statuario marble flooring, and smart motorized shading.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/img1.webp" alt="The Alipore Penthouse Living Room" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Living &amp; Dining</span>
+              <h3 class="project-title">The Alipore Penthouse</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> Alipore</span>
+                <span>3,400 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="kitchen" data-title="Salt Lake Modern Minimalist Kitchen" data-category-label="Modular Kitchen" data-area="450 Sq. Ft." data-style="German Minimalist" data-client="Duplex Residence, Salt Lake" data-desc="Slate blue matte acrylic cabinetry paired with natural oak wood ceiling slats, engineered quartz waterfall countertop, concealed pantry, and built-in Bosch appliances.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/img-4.jpg" alt="Modern Minimalist Kitchen in Salt Lake" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Modular Kitchen</span>
+              <h3 class="project-title">Salt Lake Modern Kitchen</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> Salt Lake Sector V</span>
+                <span>450 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="living" data-title="Ballygunge Heritage Villa Living Room" data-category-label="Living & Dining" data-area="2,600 Sq. Ft." data-style="Modern Classical" data-client="Heritage Villa, Ballygunge Circular Rd" data-desc="Exposed natural sandstone feature wall with recessed warm cove illumination, custom low-slung sectional, solid teak furniture, and brass artifact niches.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/home-bg.jpg" alt="Ballygunge Heritage Living Room" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Living &amp; Dining</span>
+              <h3 class="project-title">Ballygunge Heritage Villa</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> Ballygunge</span>
+                <span>2,600 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="bedroom" data-title="Park Street Botanical Master Suite" data-category-label="Bedroom Suites" data-area="1,850 Sq. Ft." data-style="Neo-Classical Greenery" data-client="Luxury Apartment, Park Street" data-desc="Calming forest green accent walls with brushed brass wall sconces, plush velvet blush pink daybed, minimalist shelving, and concealed oak walk-in closets.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/img-2.jpg" alt="Park Street Master Suite" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Bedroom Suites</span>
+              <h3 class="project-title">Park Street Sanctuary</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> Park Street</span>
+                <span>1,850 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="bath" data-title="South City Spa Bathroom & Lounge" data-category-label="Luxury Bath & Spa" data-area="320 Sq. Ft." data-style="Biophilic Spa" data-client="South City Sky Villa, Prince Anwar Shah Rd" data-desc="Freestanding acrylic soaking tub overlooking botanical gardens, circular gold-rimmed backlit mirror, custom fluted oak vanity with ceramic vessel basin, and matte subway tiles.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/img-5.jpg" alt="South City Spa Bathroom" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Luxury Bath &amp; Spa</span>
+              <h3 class="project-title">South City Sky Spa</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> South City</span>
+                <span>320 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="commercial" data-title="New Town Executive Studio Villa" data-category-label="Commercial & Architecture" data-area="4,200 Sq. Ft." data-style="Modern Architectural Exterior & Interior" data-client="Architectural Bungalow, New Town Action Area III" data-desc="Exposed brick facade with dormer architectural windows, ambient fairy warm lighting, bespoke outdoor deck, and seamless integration between landscape and interior.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/img-1.jpg" alt="New Town Studio Architecture" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Architecture &amp; Commercial</span>
+              <h3 class="project-title">New Town Executive Studio</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> New Town</span>
+                <span>4,200 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card" data-category="bath" data-title="Pristine Minimalist Ensuite" data-category-label="Luxury Bath & Spa" data-area="240 Sq. Ft." data-style="Minimalist Monochrome" data-client="Duplex Residence, New Alipore" data-desc="Seamless white subway tile cladding with frameless walk-in glass shower enclosure, chrome Grohe thermostatic fixtures, and concealed water closet cistern.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/img-6.jpg" alt="Minimalist White Bathroom" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Luxury Bath &amp; Spa</span>
+              <h3 class="project-title">Pristine Minimalist Ensuite</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> New Alipore</span>
+                <span>240 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card" data-category="living" data-title="Bespoke Terrace Pool & Living Deck" data-category-label="Living & Outdoor" data-area="1,800 Sq. Ft." data-style="Resort Architecture" data-client="Penthouse Sky Villa, EM Bypass" data-desc="Private infinity pool deck lined with cobalt ceramic mosaic tiles, weather-resistant composite teak decking, architectural planters, and outdoor lounge seating.">
+          <div class="project-media-wrap">
+            <img src="IMAGE/img-3.jpg" alt="Terrace Pool Deck" />
+            <div class="project-overlay">
+              <span class="project-category-tag">Living &amp; Outdoor</span>
+              <h3 class="project-title">EM Bypass Sky Oasis</h3>
+              <div class="project-meta-pills">
+                <span><i class="fas fa-map-marker-alt"></i> EM Bypass</span>
+                <span>1,800 Sq.Ft</span>
+              </div>
+            </div>
+            <div class="project-view-btn"><i class="fas fa-expand-arrows-alt"></i></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Project Lightbox Modal -->
+  <div class="project-modal-backdrop" aria-hidden="true">
+    <div class="project-modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" aria-label="Close project modal"><i class="fas fa-times"></i></button>
+
+      <div class="modal-image-col">
+        <img src="" alt="Project Full View" />
+      </div>
+
+      <div class="modal-details-col">
+        <span class="modal-category">Interior Project</span>
+        <h3 class="modal-title">Project Name</h3>
+        <p class="modal-desc">Project details and craftsmanship description.</p>
+
+        <div class="modal-specs-list">
+          <div class="modal-spec-item">
+            <label>Covered Area</label>
+            <span data-modal-area>--</span>
+          </div>
+          <div class="modal-spec-item">
+            <label>Design Style</label>
+            <span data-modal-style>--</span>
+          </div>
+          <div class="modal-spec-item">
+            <label>Location &amp; Client</label>
+            <span data-modal-client>--</span>
+          </div>
+          <div class="modal-spec-item">
+            <label>Handover Timeline</label>
+            <span>45 Days Move-In</span>
+          </div>
+        </div>
+
+        <a href="quote.html" class="btn btn-primary" style="margin-top: auto;">
+          <span>Request Similar Design Quote</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo-link" style="margin-bottom: 1.25rem;">
+            <img src="IMAGE/LOGO1.png" alt="A.P. Interior Logo" class="brand-logo-img" />
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">A.P. INTERIOR</span>
+              <span class="brand-subtitle">Design Atelier &bull; Kolkata</span>
+            </div>
+          </a>
+          <p>A.P. Interior &amp; Home Decoration is Kolkata's premier interior architectural atelier. "Coloring Dreams, Designing Spaces" with guaranteed 45-day handover.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-angle-right text-gold"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-right text-gold"></i> About Studio</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-right text-gold"></i> Interior Services</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-right text-gold"></i> Design Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-right text-gold"></i> Contact Atelier</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kolkata Studio</h4>
+          <p>Prince Anwar Shah Road, South Kolkata - 700045</p>
+          <p style="margin-top: 0.5rem;"><i class="fas fa-phone-alt text-gold"></i> +91 98300 12345</p>
+          <p><i class="fas fa-envelope text-gold"></i> contact@apinteriors.in</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Guarantees</h4>
+          <p>45-Day Handover Guarantee</p>
+          <p>Flat 10-Year Comprehensive Warranty</p>
+          <p>Zero Hidden Cost Price Transparency</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 A.P. Interior &amp; Home Decoration. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-widgets">
+    <a href="https://wa.me/919830012345" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" title="WhatsApp Chat" aria-label="WhatsApp Chat">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="float-btn scroll-top-btn" title="Back to top" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

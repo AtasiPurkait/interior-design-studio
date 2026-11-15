@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Free Quote &amp; 3D Plan | A.P. Interior &amp; Home Decoration</title>
+  <meta name="description" content="Calculate your personalized interior design cost estimate for your home or office in Kolkata. Transparent pricing with 45-day handover guarantee." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="quote.css" />
+</head>
+<body class="quote-page-wrapper">
+
+  <!-- =========================================================================
+       HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo-link" aria-label="A.P. Interior Homepage">
+        <img src="IMAGE/LOGO1.png" alt="A.P. Interior Monogram" class="brand-logo-img" />
+        <div class="brand-text-block">
+          <span class="brand-title">A.P. INTERIOR</span>
+          <span class="brand-subtitle">Design Atelier &bull; Kolkata</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle theme mode" title="Switch Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="tel:+919830012345" class="btn btn-secondary btn-sm d-none-mobile">
+          <i class="fas fa-phone-alt text-gold"></i>
+          <span>+91 98300 12345</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="brand-text-block">
+        <span class="brand-title">A.P. INTERIOR</span>
+        <span class="brand-subtitle">Luxury Living &bull; Kolkata</span>
+      </div>
+      <button class="drawer-close-btn" aria-label="Close Mobile Menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link"><span>Home</span><i class="fas fa-chevron-right"></i></a>
+      <a href="about.html" class="mobile-nav-link"><span>About Studio</span><i class="fas fa-chevron-right"></i></a>
+      <a href="services.html" class="mobile-nav-link"><span>Interior Services</span><i class="fas fa-chevron-right"></i></a>
+      <a href="projects.html" class="mobile-nav-link"><span>Design Portfolio</span><i class="fas fa-chevron-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link"><span>Contact Atelier</span><i class="fas fa-chevron-right"></i></a>
+    </nav>
+  </aside>
+
+  <!-- =========================================================================
+       PAGE HERO & BREADCRUMBS
+       ========================================================================= -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.65rem;"></i>
+        <span class="current">Get Free Quote</span>
+      </div>
+      <h1>Interactive Cost Calculator &amp; Quote Wizard</h1>
+      <p style="color: #D3CECE; max-width: 620px; margin: 0 auto;">
+        Customize your space, select signature architectural finishes, and receive an instant preliminary estimate followed by a 3D moodboard consultation.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       QUOTE WIZARD MAIN CONTAINER
+       ========================================================================= -->
+  <main class="quote-main-container">
+    <div class="container">
+      <div class="quote-wizard-card">
+        <!-- Wizard Header -->
+        <div class="quote-wizard-header">
+          <span style="font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--accent-gold); font-weight: 700;">Step-by-Step Estimator</span>
+          <h1>Tailor Your Interior Investment</h1>
+          <p>Transparent estimates backed by our 45-day move-in guarantee and 10-year comprehensive warranty.</p>
+
+          <!-- Stepper Nodes -->
+          <div class="wizard-steps-indicator">
+            <div class="wizard-step-node active" data-step="1">
+              <div class="step-circle">1</div>
+              <span class="step-label">Floor Plan</span>
+            </div>
+            <div class="wizard-step-node" data-step="2">
+              <div class="step-circle">2</div>
+              <span class="step-label">Scope</span>
+            </div>
+            <div class="wizard-step-node" data-step="3">
+              <div class="step-circle">3</div>
+              <span class="step-label">Finishes</span>
+            </div>
+            <div class="wizard-step-node" data-step="4">
+              <div class="step-circle">4</div>
+              <span class="step-label">Consultation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wizard Form Body -->
+        <div class="wizard-form-body">
+          <form id="multiStepQuoteForm" onsubmit="event.preventDefault();">
+
+            <!-- Sticky Live Estimate Badge -->
+            <div class="live-estimate-badge-box">
+              <div>
+                <span class="estimate-caption">Live Estimated Investment Range</span>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                  Includes 3D architectural plan, factory fabrication, and white-glove installation
+                </div>
+              </div>
+              <div class="estimate-number" id="wizardLivePrice">₹12.5L - ₹16.8L</div>
+            </div>
+
+            <!-- STEP 1: PROPERTY CONFIGURATION -->
+            <div class="wizard-section-pane active" id="paneStep1">
+              <h3 class="pane-heading">1. What is your property configuration?</h3>
+              <p class="pane-subtitle">Select the floor plan type that best represents your residence or commercial space.</p>
+
+              <div class="property-types-grid">
+                <div class="property-card-select">
+                  <input type="radio" id="pType1" name="quotePropType" value="1bhk" />
+                  <label for="pType1" class="property-card-label">
+                    <i class="fas fa-door-closed"></i>
+                    <h4>1 BHK Flat</h4>
+                    <span>450 – 650 sq.ft</span>
+                  </label>
+                </div>
+
+                <div class="property-card-select">
+                  <input type="radio" id="pType2" name="quotePropType" value="2bhk" checked />
+                  <label for="pType2" class="property-card-label">
+                    <i class="fas fa-couch"></i>
+                    <h4>2 BHK Flat</h4>
+                    <span>750 – 1,100 sq.ft</span>
+                  </label>
+                </div>
+
+                <div class="property-card-select">
+                  <input type="radio" id="pType3" name="quotePropType" value="3bhk" />
+                  <label for="pType3" class="property-card-label">
+                    <i class="fas fa-hotel"></i>
+                    <h4>3 BHK Luxury</h4>
+                    <span>1,200 – 1,800 sq.ft</span>
+                  </label>
+                </div>
+
+                <div class="property-card-select">
+                  <input type="radio" id="pType4" name="quotePropType" value="villa" />
+                  <label for="pType4" class="property-card-label">
+                    <i class="fas fa-landmark"></i>
+                    <h4>4 BHK / Villa</h4>
+                    <span>2,000+ sq.ft</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" style="max-width: 450px;">
+                <label for="carpetAreaCustom">Estimated Carpet Area (Optional sq.ft)</label>
+                <input type="number" id="carpetAreaCustom" class="form-control" placeholder="e.g. 1450" />
+              </div>
+            </div>
+
+            <!-- STEP 2: SCOPE OF WORK -->
+            <div class="wizard-section-pane" id="paneStep2">
+              <h3 class="pane-heading">2. Which spaces do you wish to design?</h3>
+              <p class="pane-subtitle">Choose the core rooms and architectural features required for your project.</p>
+
+              <div class="scopes-grid">
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeLiving" name="quoteScope" value="living" checked />
+                  <label for="scopeLiving" class="scope-card-label">
+                    <i class="fas fa-couch"></i>
+                    <span>Living &amp; Dining Room</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeKitchen" name="quoteScope" value="kitchen" checked />
+                  <label for="scopeKitchen" class="scope-card-label">
+                    <i class="fas fa-kitchen-set"></i>
+                    <span>German Modular Kitchen</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeMasterBed" name="quoteScope" value="masterbed" checked />
+                  <label for="scopeMasterBed" class="scope-card-label">
+                    <i class="fas fa-bed"></i>
+                    <span>Master Bedroom Suite</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeWardrobes" name="quoteScope" value="wardrobes" checked />
+                  <label for="scopeWardrobes" class="scope-card-label">
+                    <i class="fas fa-door-open"></i>
+                    <span>Modular Wardrobes</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeCeiling" name="quoteScope" value="ceiling" checked />
+                  <label for="scopeCeiling" class="scope-card-label">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Designer False Ceiling</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopePainting" name="quoteScope" value="painting" checked />
+                  <label for="scopePainting" class="scope-card-label">
+                    <i class="fas fa-paint-roller"></i>
+                    <span>Luxury Wall Painting &amp; Art</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeBath" name="quoteScope" value="bath" />
+                  <label for="scopeBath" class="scope-card-label">
+                    <i class="fas fa-bath"></i>
+                    <span>Bathroom Vanity &amp; Glass</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeBalcony" name="quoteScope" value="balcony" />
+                  <label for="scopeBalcony" class="scope-card-label">
+                    <i class="fas fa-seedling"></i>
+                    <span>Balcony &amp; Terrace Deck</span>
+                  </label>
+                </div>
+
+                <div class="scope-checkbox-card">
+                  <input type="checkbox" id="scopeElectrical" name="quoteScope" value="electrical" />
+                  <label for="scopeElectrical" class="scope-card-label">
+                    <i class="fas fa-bolt"></i>
+                    <span>Smart Home Automation</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 3: FINISHES & BUDGET TIER -->
+            <div class="wizard-section-pane" id="paneStep3">
+              <h3 class="pane-heading">3. Choose your preferred material &amp; finish tier</h3>
+              <p class="pane-subtitle">We select only non-toxic, moisture-resistant, and internationally certified materials.</p>
+
+              <div class="calc-packages-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 2rem;">
+                <div class="package-card-option">
+                  <input type="radio" id="quoteTierEssential" name="quoteTier" value="essential" />
+                  <label for="quoteTierEssential" class="package-card-label" style="height: 100%;">
+                    <h5>Minimalist Classic</h5>
+                    <p>Century commercial ply, branded matte laminates, Hettich soft-close hinges, and Royale luxury emulsion paint.</p>
+                    <div style="margin-top: 1rem; font-size: 0.8rem; font-weight: 700; color: var(--accent-gold);">
+                      From ₹1,200 / sq.ft
+                    </div>
+                  </label>
+                </div>
+
+                <div class="package-card-option">
+                  <input type="radio" id="quoteTierPremium" name="quoteTier" value="premium" checked />
+                  <label for="quoteTierPremium" class="package-card-label" style="height: 100%;">
+                    <h5>Premium Contemporary</h5>
+                    <p>BWP marine-grade plywood, scratch-resistant German acrylic shutters, Blum Austria motion hardware, and fluted paneling.</p>
+                    <div style="margin-top: 1rem; font-size: 0.8rem; font-weight: 700; color: var(--accent-gold);">
+                      From ₹1,850 / sq.ft (Most Popular)
+                    </div>
+                  </label>
+                </div>
+
+                <div class="package-card-option">
+                  <input type="radio" id="quoteTierLuxury" name="quoteTier" value="luxury" />
+                  <label for="quoteTierLuxury" class="package-card-label" style="height: 100%;">
+                    <h5>Ultra-Luxury Bespoke</h5>
+                    <p>Authentic smoked veneers, Italian Statuario marble, motorized tandem drawers, tinted bronze glass, and architectural lighting.</p>
+                    <div style="margin-top: 1rem; font-size: 0.8rem; font-weight: 700; color: var(--accent-gold);">
+                      From ₹2,600 / sq.ft
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" style="max-width: 500px;">
+                <label for="moveInTimeline">Expected Handover / Possession Date</label>
+                <select id="moveInTimeline" class="form-control">
+                  <option value="immediate">Immediate (Ready for possession within 45 days)</option>
+                  <option value="1month">Within 1 - 2 Months</option>
+                  <option value="3months">Within 3 - 6 Months</option>
+                  <option value="planning">Just Exploring Concepts &amp; Budget</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- STEP 4: CONTACT & SCHEDULE CONSULTATION -->
+            <div class="wizard-section-pane" id="paneStep4">
+              <h3 class="pane-heading">4. Where should we send your itemized 3D plan &amp; BOQ?</h3>
+              <p class="pane-subtitle">Our design director will review your specifications and schedule your free consultation.</p>
+
+              <div class="row" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="form-group">
+                  <label for="quoteClientName">Full Name *</label>
+                  <input type="text" id="quoteClientName" class="form-control" placeholder="e.g. Ananya Sengupta" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="quoteClientEmail">Email Address</label>
+                  <input type="email" id="quoteClientEmail" class="form-control" placeholder="ananya@example.com" />
+                </div>
+              </div>
+
+              <div class="row" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="form-group">
+                  <label for="quoteClientPhone">WhatsApp Contact Number *</label>
+                  <div class="phone-input-group">
+                    <div class="phone-prefix">🇮🇳 +91</div>
+                    <input type="tel" id="quoteClientPhone" placeholder="Enter 10-digit number" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="quoteProjectLocation">Project Neighborhood in Kolkata *</label>
+                  <input type="text" id="quoteProjectLocation" class="form-control" placeholder="e.g. Alipore, Salt Lake, New Town, South City" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="quoteClientNotes">Special Requirements or Aesthetic Preferences (Optional)</label>
+                <textarea id="quoteClientNotes" class="form-control" rows="3" placeholder="Tell us if you love minimalist Japandi, classical wood carvings, open kitchens, or specific color palettes..."></textarea>
+              </div>
+
+              <label class="custom-checkbox" style="margin-top: 1rem;">
+                <input type="checkbox" id="whatsappQuoteUpdates" checked />
+                <span>Send me the detailed PDF estimate &amp; 3D moodboard on WhatsApp</span>
+              </label>
+            </div>
+
+            <!-- WIZARD BUTTON NAVIGATION -->
+            <div class="wizard-footer-nav">
+              <button type="button" id="wizardPrevBtn" class="btn btn-secondary" style="display: none;">
+                <i class="fas fa-arrow-left"></i>
+                <span>Previous Step</span>
+              </button>
+
+              <button type="button" id="wizardNextBtn" class="btn btn-primary" style="margin-left: auto;">
+                <span>Next Step</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo-link" style="margin-bottom: 1.25rem;">
+            <img src="IMAGE/LOGO1.png" alt="A.P. Interior Logo" class="brand-logo-img" />
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">A.P. INTERIOR</span>
+              <span class="brand-subtitle">Design Atelier &bull; Kolkata</span>
+            </div>
+          </a>
+          <p>A.P. Interior &amp; Home Decoration is Kolkata's premier interior architectural atelier. "Coloring Dreams, Designing Spaces" with guaranteed 45-day handover.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-angle-right text-gold"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-right text-gold"></i> About Studio</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-right text-gold"></i> Interior Services</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-right text-gold"></i> Design Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-right text-gold"></i> Contact Atelier</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Guaranteed Peace of Mind</h4>
+          <ul class="footer-links-list">
+            <li><span style="color: #A39D94;"><i class="fas fa-check text-gold"></i> 45-Day Handover or Rent Paid</span></li>
+            <li><span style="color: #A39D94;"><i class="fas fa-check text-gold"></i> 10-Year Hardware &amp; Wood Warranty</span></li>
+            <li><span style="color: #A39D94;"><i class="fas fa-check text-gold"></i> Zero Hidden Charges BOQ</span></li>
+            <li><span style="color: #A39D94;"><i class="fas fa-check text-gold"></i> 146 Quality Checkpoints</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kolkata Studio</h4>
+          <p>Prince Anwar Shah Road, South Kolkata - 700045</p>
+          <p style="margin-top: 0.5rem;"><i class="fas fa-phone-alt text-gold"></i> +91 98300 12345</p>
+          <p><i class="fas fa-envelope text-gold"></i> contact@apinteriors.in</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 A.P. Interior &amp; Home Decoration. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Warranty Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <div class="floating-widgets">
+    <a href="https://wa.me/919830012345?text=Hello%20A.P.%20Interior,%20I%20used%20your%20online%20estimator%20and%20would%20like%20to%20discuss%20my%20floor%20plan." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="float-btn float-whatsapp" 
+       title="Chat on WhatsApp" 
+       aria-label="WhatsApp Chat">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="float-btn scroll-top-btn" title="Back to top" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
